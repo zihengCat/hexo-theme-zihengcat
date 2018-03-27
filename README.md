@@ -1,2 +1,2 @@
-# hexo-theme-zihengcat
-Theme by Hux,  Ported by Kaijun, Modified by zihengCat
+# Hexo theme zihengCat
+Theme by Hux, Ported by Kaijun, Modified by zihengCat.
