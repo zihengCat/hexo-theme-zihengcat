@@ -146,6 +146,16 @@ pre code {
   width: auto;
   white-space: pre;
   word-wrap: normal;
+  /* avoid highlight.js */
+  border: none;
+}
+code {
+  /* using custom code CSS style */
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 90%;
 }
 .post-container a {
   color: #337ab7;
@@ -563,7 +573,7 @@ pre code {
 }
 footer {
   font-size: 20px;
-  padding: 50px 0 65px;
+  padding: 50px 50px 50px 50px;
 }
 footer .list-inline {
   margin: 0;
@@ -770,7 +780,8 @@ body {
   line-height: 28px;
   margin: 0 2px;
   margin-bottom: 8px;
-  background: #D6D6D6;
+  /* Custom tag Cloud Background Color */
+  background: #bbbbbb;
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,

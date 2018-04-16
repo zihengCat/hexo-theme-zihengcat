@@ -3,8 +3,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<%= config.description %>">
-    <meta name="keyword"  content="<%= config.keyword %>">
+    <meta name="keyword" content="<%= config.keyword %>">
+    <meta name="google-site-verification" content="<%= config.GoogleSiteVerfication %>" />
     <link rel="shortcut icon" href="<%= config.root %>img/favicon.png">
+    <link rel="canonical" href="<%= config.url + config.root + (page.path||'').replace('index.html', '') %>">
     <title>
         <% if (page.title) { %>
           <%= page.title + ' - ' + config.SEOTitle %>
@@ -12,7 +14,6 @@
           <%= config.SEOTitle %>
         <% } %>
     </title>
-    <link rel="canonical" href="<%= config.url + config.root + (page.path||'').replace('index.html', '') %>">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

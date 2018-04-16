@@ -8,14 +8,12 @@ layout: layout
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
                     <h1><%= page.title || config.title %></h1>
-                    <!--<hr class="small">-->
                     <span class="subheading"><%= page.description || config.subtitle || "" %></span>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
 <!-- Main Content -->
 <div class="container">
     <div class="row">
@@ -27,14 +25,12 @@ layout: layout
             </div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
+                 col-lg-8 col-lg-offset-2
+                 col-md-10 col-md-offset-1
+                 sidebar-container">
                 <!-- Featured Tags -->
                 <% if(config['featured-tags']) { %>
                 <section>
-                    <!-- no hr -->
                     <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                         <% site.tags.map(function(tag){  %>
@@ -45,13 +41,11 @@ layout: layout
                     </div>
                 </section>
                 <% }%>
-
                 <!-- Friends Blog -->
                 <% if(config.friends) { %>
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-
                     <% config.friends.forEach(function(friend){ %>
                         <li><a href="<%= friend.href %>"><%= friend.title %></a></li>
                     <% }); %>
@@ -59,7 +53,6 @@ layout: layout
                 <% }%>
             </div>
         <%} else{ %>
-
 <!-- USE SIDEBAR -->
   <!-- Post Container -->
     <div class="
@@ -68,7 +61,6 @@ layout: layout
          col-sm-12
          col-xs-12
          post-container">
-
     <%- page.content || body %>
 
 <% if(page.comments) { %>

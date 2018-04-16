@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 <!-- Main Content -->
 <% page.posts.each(function(post){ %>
 <div class="post-preview">
@@ -21,11 +20,9 @@ layout: page
         Posted by <%- post.author || config.author %> on
         <%= post.date.format(config.date_format) %>
     </p>
-
 </div>
 <hr>
 <% }); %>
-
 
 <!-- Pager -->
 <ul class="pager">
@@ -40,4 +37,3 @@ layout: page
         </li>
     <% } %>
 </ul>
-
